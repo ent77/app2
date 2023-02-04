@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diet">
+
+    <LinearLayout
+        android:id="@+id/diet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D5F0EC"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        tools:context=".diet">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp">
+
+            <View
+                android:id="@+id/diettitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/titlecolour" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="饮食"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="#60D1CD"
+                app:srcCompat="@drawable/back" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="今天"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:translationY="-20dp">
+
+                <ImageButton
+                    android:id="@+id/pre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#D4EFEB"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/pre" />
+
+                <TextView
+                    android:id="@+id/date3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="100dp"
+                    android:text="11月24日"
+                    android:textColor="#50555C"
+                    android:translationX="-20dp"
+                    android:translationY="20dp" />
+
+                <TextView
+                    android:id="@+id/date2"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="70dp"
+                    android:layout_weight="1"
+                    android:text="星期五"
+                    android:textColor="#50555C"
+                    android:translationX="-80dp"
+                    android:translationY="20dp" />
+
+                <ImageButton
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#D4EFEB"
+                    android:contentDescription="@string/app_name"
+                    android:translationX="-5dp"
+                    app:srcCompat="@drawable/next" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp">
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="357dp"
+                android:layout_height="205dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/content" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:progressBarStyleHorizontal"
+                android:layout_width="262dp"
+                android:layout_height="91dp"
+                android:layout_gravity="center_horizontal"
+                android:max="100"
+                android:progress="50"
+                android:progressTint="#D4EFEB"
+                android:rotation="0"
+                android:rotationY="0"
+                android:scaleX="1"
+                android:scaleY="2"
+                android:translationY="40dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="1300"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:translationY="10dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="已摄入（kcal）"
+                android:translationY="35dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="建议摄入"
+                android:textColor="#000000"
+                android:translationX="-40dp"
+                android:translationY="55dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="2100（kcal）"
+                android:textColor="#000000"
+                android:translationX="40dp"
+                android:translationY="55dp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="饮食记录"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:translationX="20dp"
+            android:translationY="20dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:translationY="40dp">
+
+            <FrameLayout
+                android:layout_width="144dp"
+                android:layout_height="match_parent"
+                android:translationX="237dp">
+
+                <View
+                    android:id="@+id/view10"
+                    android:layout_width="144dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/content" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="午餐"
+                    android:translationX="10dp"
+                    android:translationY="10dp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="建议摄入"
+                    android:textSize="10sp"
+                    android:translationX="10dp"
+                    android:translationY="40dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:backgroundTint="#FEFEFE"
+                    android:translationX="13dp"
+                    android:translationY="-11dp"
+                    app:srcCompat="@drawable/add" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="144dp"
+                android:layout_height="match_parent"
+                android:translationX="30dp">
+
+                <View
+                    android:id="@+id/view13"
+                    android:layout_width="144dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/content" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="早餐"
+                    android:translationX="10dp"
+                    android:translationY="10dp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="建议摄入"
+                    android:textSize="10sp"
+                    android:translationX="10dp"
+                    android:translationY="40dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:backgroundTint="#FEFEFE"
+                    android:translationX="13dp"
+                    android:translationY="-11dp"
+                    app:srcCompat="@drawable/add" />
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:translationY="60dp">
+
+            <FrameLayout
+                android:layout_width="144dp"
+                android:layout_height="match_parent"
+                android:translationX="237dp">
+
+                <View
+                    android:id="@+id/view8"
+                    android:layout_width="144dp"
+                    android:layout_height="132dp"
+                    android:background="@drawable/content" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="加餐"
+                    android:translationX="10dp"
+                    android:translationY="10dp" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="建议摄入"
+                    android:textSize="10sp"
+                    android:translationX="10dp"
+                    android:translationY="40dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:backgroundTint="#FEFEFE"
+                    android:translationX="13dp"
+                    android:translationY="-11dp"
+                    app:srcCompat="@drawable/add" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="144dp"
+                android:layout_height="match_parent"
+                android:translationX="30dp">
+
+                <View
+                    android:id="@+id/view18"
+                    android:layout_width="144dp"
+                    android:layout_height="132dp"
+                    android:background="@drawable/content" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="晚餐"
+                    android:translationX="10dp"
+                    android:translationY="10dp" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="建议摄入"
+                    android:textSize="10sp"
+                    android:translationX="10dp"
+                    android:translationY="40dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:backgroundTint="#FEFEFE"
+                    android:translationX="13dp"
+                    android:translationY="-11dp"
+                    app:srcCompat="@drawable/add" />
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:translationX="30dp"
+            android:translationY="60dp">
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="353dp"
+                android:layout_height="132dp"
+                android:background="@drawable/content" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="饮水记录"
+                android:translationX="10dp"
+                android:translationY="10dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="建议摄入"
+                android:textSize="10sp"
+                android:translationX="10dp"
+                android:translationY="40dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:backgroundTint="#FEFEFE"
+                android:translationX="13dp"
+                android:translationY="-11dp"
+                app:srcCompat="@drawable/add" />
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
