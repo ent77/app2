@@ -3,10 +3,9 @@ package com.example.app
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class diet : AppCompatActivity() {
+class NewUser1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_diet)
-        supportActionBar?.hide()
+        setContentView(R.layout.activity_new_user1)
     }
 }

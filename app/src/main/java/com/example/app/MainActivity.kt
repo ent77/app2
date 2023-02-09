@@ -14,5 +14,11 @@ class MainActivity : AppCompatActivity() {
             val intent=Intent(this,diet::class.java)
             startActivity(intent)
         }
+        detail2.setOnClickListener {
+            val intent=Intent(this,myplan::class.java)
+            startActivity(intent)
+        }
+        val dbHelper = UserData(this, "Userdata.db", 1)
+        dbHelper.writableDatabase
     }
 }
