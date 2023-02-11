@@ -3,11 +3,9 @@ package com.example.app
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Welcome : AppCompatActivity() {
+class bodycheckup_single : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_welcome)
-        val dbHelper = UserData(this, "Userdata.db", 1)
-        dbHelper.writableDatabase
+        setContentView(R.layout.activity_bodycheckup_single)
     }
 }

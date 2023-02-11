@@ -397,7 +397,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:backgroundTint="#FEFEFE"
-                android:translationX="13dp"
+                android:translationX="-60dp"
                 android:translationY="-11dp"
                 app:srcCompat="@drawable/add" />
         </FrameLayout>

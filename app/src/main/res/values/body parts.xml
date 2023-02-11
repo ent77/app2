@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">app</string>
+    <string name="title_activity_diet">diet</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="buwei">
+        <item>胸部</item>
+        <item>背部</item>
+        <item>肩部</item>
+        <item>腰部</item>
+        <item>全部</item>
+        <item>手臂</item>
+    </string-array>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D5F0EC"
+        android:orientation="vertical"
+        tools:context=".foodrec">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp">
+
+            <View
+                android:id="@+id/diettitle"
+                android:layout_width="wrap_content"
+                android:layout_height="84dp"
+                android:background="@drawable/titlecolour" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="评分标准"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="#60D1CD"
+                app:srcCompat="@drawable/back" />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="引体向上"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="长跑"
+                android:id="@+id/tv2"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="坐位体前屈"
+                android:id="@+id/tv3"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="立定跳远"
+                android:id="@+id/tv4"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="短跑"
+                android:id="@+id/tv5"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"
+            android:id="@+id/pingfenxiangmu"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

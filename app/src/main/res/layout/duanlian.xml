@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="84dp">
+
+                <View
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:background="@drawable/titlecolour" />
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="锻炼"
+                    android:textColor="#FDFDFD"
+                    android:textSize="25sp"
+                    android:translationX="10dp"
+                    android:translationY="30dp" />
+
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/yuanjiao"
+                    android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+                    />
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:text="训练计划" />
+            </LinearLayout>
+            <View
+                android:layout_marginTop="20dp"
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#96999E"
+                android:backgroundTint="#96999E"
+                android:foregroundTint="#96999E"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/yuanjiao"
+                    android:drawableStart="@drawable/ic_baseline_work_24"
+                    />
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:text="动作库" />
+            </LinearLayout>
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#96999E"
+                android:backgroundTint="#96999E"
+                android:foregroundTint="#96999E"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
