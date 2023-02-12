@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".duanlian">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp">
+
+        <View
+            android:id="@+id/diettitle"
+            android:layout_width="wrap_content"
+            android:layout_height="84dp"
+            android:background="@drawable/titlecolour" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="添加至计划"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#60D1CD"
+            app:srcCompat="@drawable/back" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="训练时间"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="101dp" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="每日训练组数"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="197dp" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="每组训练次数"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <Spinner
+        android:id="@+id/buwei2"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <Spinner
+        android:id="@+id/buwei3"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="332dp" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="60dp"
+        android:layout_height="22dp"
+        android:background="@drawable/jiangpai2"
+        android:text="周四"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="60dp"
+        android:layout_height="22dp"
+        android:background="@drawable/jiangpai2"
+        android:text="周五"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="60dp"
+        android:layout_height="22dp"
+        android:background="@drawable/jiangpai2"
+        android:text="周三"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="60dp"
+        android:layout_height="22dp"
+        android:background="@drawable/jiangpai2"
+        android:text="周二"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="60dp"
+        android:layout_height="22dp"
+        android:background="@drawable/jiangpai2"
+        android:text="周日"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <Button
+        android:id="@+id/button26"
+        android:layout_width="60dp"
+        android:layout_height="22dp"
+        android:background="@drawable/jiangpai2"
+        android:text="周六"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="60dp"
+        android:layout_height="22dp"
+        android:background="@drawable/jiangpai"
+        android:text="周一"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
