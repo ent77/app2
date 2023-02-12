@@ -6,6 +6,6 @@ import android.os.Bundle
 class dongzuoku : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dongzuoku)
+        setContentView(R.layout.dongzuoku)
     }
 }

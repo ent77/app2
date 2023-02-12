@@ -10,9 +10,6 @@ class myplan : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_myplan)
         supportActionBar?.hide()
-        val dbHelper = Dietplan(this, "food.db", 2)
-        imageButton6.setOnClickListener {
-            dbHelper.writableDatabase
-        }
+
     }
 }

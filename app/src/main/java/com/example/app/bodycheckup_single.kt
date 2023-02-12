@@ -6,6 +6,6 @@ import android.os.Bundle
 class bodycheckup_single : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_bodycheckup_single)
+        setContentView(R.layout.bodycheckup_single_layout)
     }
 }

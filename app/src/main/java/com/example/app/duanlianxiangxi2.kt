@@ -3,9 +3,9 @@ package com.example.app
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class BodyCheckup : AppCompatActivity() {
+class duanlianxiangxi2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.bodycheckup_layout)
+        setContentView(R.layout.activity_duanlianxiangxi2)
     }
 }

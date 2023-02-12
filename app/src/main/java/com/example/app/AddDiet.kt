@@ -3,9 +3,9 @@ package com.example.app
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class BodyCheckup : AppCompatActivity() {
+class AddDiet : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.bodycheckup_layout)
+        setContentView(R.layout.activity_add_diet)
     }
 }

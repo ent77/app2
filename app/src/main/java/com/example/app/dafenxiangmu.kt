@@ -6,6 +6,6 @@ import android.os.Bundle
 class dafenxiangmu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dafenxiangmu)
+        setContentView(R.layout.dafenchaxun)
     }
 }

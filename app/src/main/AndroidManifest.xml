@@ -13,6 +13,27 @@
         android:theme="@style/Theme.App"
         tools:targetApi="31">
         <activity
+            android:name=".duanlianxiangxi2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".duanlianxiangxi1"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AddDiet"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".yintixiangshang"
             android:exported="false">
             <meta-data
