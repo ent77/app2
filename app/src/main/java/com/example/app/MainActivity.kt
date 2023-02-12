@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity() {
 //        db.insert("Exercise", null, exe1)
 //        db.insert("Exercise", null, exe2)
         button14.setOnClickListener {
-            val  intent=Intent(this,duanlianxiangxi2::class.java)
+            val  intent=Intent(this,foodrecord::class.java)
             startActivity(intent)
         }
 
