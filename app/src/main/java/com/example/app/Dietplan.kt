@@ -11,6 +11,8 @@ SQLiteOpenHelper(context, name, null, version) {
             "id integer primary key autoincrement," +
             "foodperEnergy integer," +
             "foodName text,"+
+            "Time1 text,"+
+            "Time2 text,"+
             "foodIntruduction text)"
     private val createExercise = "create table Exercise (" +
             "id integer primary key autoincrement," +
@@ -31,6 +33,23 @@ SQLiteOpenHelper(context, name, null, version) {
             "Date text," +
             "GroupNumber integer," +
             "Number integer)"
+    private val createUser = "create table Userdata (" +
+            "id integer primary key autoincrement," +
+            "password text," +
+            "UserName text,"+
+            "Age integer,"+
+            "Sex text,"+
+            "Aim text)"
+    private val breakfast = "create table Breakfast (" +
+            "id integer primary key autoincrement," +
+            "date text," +
+            "foodName text,"+
+            "AdviceFood text,"+
+            "WholeEnergy integer,"+
+            "Wholezhifang integer,"+
+            "Wholedanbai integer,"+
+            "Wholedtanshui integer)"
+
 
     override fun onCreate(db: SQLiteDatabase) {
         db.execSQL(createdietplan)
@@ -39,11 +58,12 @@ SQLiteOpenHelper(context, name, null, version) {
         Toast.makeText(context, "Create succeeded", Toast.LENGTH_SHORT).show()
     }
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
-//        if (oldVersion <= 3) {
-//            db.execSQL(Exeplan)
-//            Toast.makeText(context, "11111", Toast.LENGTH_SHORT).show()
-//        }
-//
-//        onCreate(db)
+        if (oldVersion <= 2) {
+
+            db.execSQL(breakfast)
+            Toast.makeText(context, "11111", Toast.LENGTH_SHORT).show()
+        }
+
+
     }
 }

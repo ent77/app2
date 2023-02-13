@@ -26,9 +26,9 @@ class tianjiazhijihua : AppCompatActivity() {
 
         }
         button13.setOnClickListener {
-            val dbHelper = Dietplan(this, "food.db", 1)
+            val dbHelper = Dietplan(this, "food.db", 2)
             val db = dbHelper.writableDatabase
-            db.insert("ExercisePlan", null, ExePlan1)
+//            db.insert("ExercisePlan", null, ExePlan1)
             Toast.makeText(this, "Create succeeded", Toast.LENGTH_SHORT).show()
         }
 

@@ -20,11 +20,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val dbHelper = Dietplan(this, "food.db", 1)
+        val dbHelper = Dietplan(this, "food.db", 3)
         dbHelper.writableDatabase
         val values1 = ContentValues().apply {
 
             put("foodName", "<熟>鸡蛋")
+            put("Time1", "早餐")
+            put("Time2", "午餐")
             put("foodperEnergy", 280)
             put("foodIntruduction", "鸡蛋含有丰富的蛋白质、脂肪、维生素和铁、钙、钾等人体所需要的矿物质,蛋白质为优质蛋白,对肝脏组织损伤有修复作用")
 
@@ -32,6 +34,8 @@ class MainActivity : AppCompatActivity() {
         val values2 = ContentValues().apply {
 
             put("foodName", "红薯")
+            put("Time1", "早餐")
+            put("Time2", "晚餐")
             put("foodperEnergy", 140)
             put("foodIntruduction", "红薯是营养丰富的天然滋补食品，其中含有蛋白质，脂肪，各类维生素，8种氨基酸，是营养价值较高的优质食物。")
 
@@ -79,7 +83,7 @@ class MainActivity : AppCompatActivity() {
 //        db.insert("Exercise", null, exe1)
 //        db.insert("Exercise", null, exe2)
         button14.setOnClickListener {
-            val  intent=Intent(this,foodrecord::class.java)
+            val  intent=Intent(this,tianjiazhijihua::class.java)
             startActivity(intent)
         }
 
