@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
 //        db.insert("Exercise", null, exe1)
 //        db.insert("Exercise", null, exe2)
         button14.setOnClickListener {
-            val  intent=Intent(this,tianjiazhijihua::class.java)
+            val  intent=Intent(this,BodyCheckup_plan::class.java)
             startActivity(intent)
         }
 

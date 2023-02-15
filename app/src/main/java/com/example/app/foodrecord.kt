@@ -11,7 +11,7 @@ class foodrecord : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_foodrecord)
         supportActionBar?.hide()
-        val dbHelper = Dietplan(this, "food.db", 1)
+        val dbHelper = Dietplan(this, "food.db", 3)
         val db = dbHelper.writableDatabase
         // 查询Book表中所有的数据
         val cursor = db.query("food", null, null, null, null, null, null)
