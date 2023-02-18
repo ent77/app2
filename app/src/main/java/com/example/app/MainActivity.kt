@@ -85,6 +85,8 @@ class MainActivity : AppCompatActivity() {
         button14.setOnClickListener {
             val  intent=Intent(this,BodyCheckup_plan::class.java)
             startActivity(intent)
+//            val intent = Intent(this,CameraActivity::class.java)
+//            startActivity(intent)
         }
 
     }
